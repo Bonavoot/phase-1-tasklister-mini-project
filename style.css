@@ -1,17 +1,36 @@
 html {
   height: 100%;
   width: 100%;
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 body {
   min-height: 100%;
   min-width: 100%;
-  background: linear-gradient(pink, violet);
+  background: linear-gradient(rgb(165, 165, 165), rgb(49, 49, 49));
+}
+
+span {
+  font-size: 20px;
 }
 
 button {
   font-size: 7px;
+}
+
+.delete {
+  border: none;
+  color: red;
+  background-color: none;
+  background: none;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.delete:hover {
+  color: rgba(255, 0, 0, 0.479);
+  cursor: pointer;
 }
 
 #main-content {
@@ -34,4 +53,28 @@ button {
   padding: 15px 20px 18px 18px;
   border-radius: 5px;
   box-shadow: 2px 5px 5px #333;
+}
+
+#tasks {
+}
+
+.priority-key {
+  list-style: none;
+  position: absolute;
+}
+
+.key-title {
+  font-weight: 900;
+}
+
+.high {
+  color: red;
+}
+
+.medium {
+  color: yellow;
+}
+
+.low {
+  color: green;
 }
